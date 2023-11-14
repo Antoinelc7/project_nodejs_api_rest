@@ -90,10 +90,9 @@ exports.deleteAPost = async (req, res) => {
         res.json({ message: "Post deleted successfully." });
 
     } catch (error) {
-
+        
         res.status(500);
         console.log(error);
         res.json({ message: "Erreur serveur." });
-        
     }
 }
